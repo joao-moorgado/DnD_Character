@@ -4,10 +4,10 @@ import `class`.Character
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    print("Escreva o nome do seu personagem: ")
+    print("Write the name of your character: ")
     var name = readLine().toString()
 
-    var ability = arrayOf(2, 3, 4, 5, 6, 7)
+    var ability = arrayOf(8, 8, 8, 8, 8, 8)
 
     println("1 - Dwarf      | CON +2\n" +
             "2 - Elf        | DEX +2\n" +
@@ -26,6 +26,8 @@ fun main() {
     }
 
     var newCharacter = Character(name, ability, race)
+
+    newCharacter.ability_points_distribution()
 
     println(newCharacter.name)
     newCharacter.ability.forEach { index -> println(index) }
