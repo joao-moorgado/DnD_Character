@@ -1,7 +1,8 @@
 package `class`.mod
 
-class WoodElfRacialMod : RacialMod {
+class WoodElfRacialMod(var ability: Array<Int>) : RacialMod {
     override fun modAbility() {
-        super.modAbility()
+        ability[1] += 2
+        ability[4] += 1
     }
 }

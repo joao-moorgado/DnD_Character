@@ -1,7 +1,8 @@
 package `class`.mod
 
-class TieflingRacialMod : RacialMod {
+class TieflingRacialMod(var ability: Array<Int>) : RacialMod {
     override fun modAbility() {
-        super.modAbility()
+        ability[5] += 2
+        ability[3] += 1
     }
 }

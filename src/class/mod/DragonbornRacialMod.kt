@@ -1,7 +1,8 @@
 package `class`.mod
 
-class DragonbornRacialMod : RacialMod {
+class DragonbornRacialMod(var ability: Array<Int>) : RacialMod {
     override fun modAbility() {
-        super.modAbility()
+        ability[0] += 2
+        ability[5] += 1
     }
 }

@@ -1,7 +1,7 @@
 package `class`.mod
 
-class HalfElfRacialMod : RacialMod {
+class HalfElfRacialMod(var ability: Array<Int>) : RacialMod {
     override fun modAbility() {
-        super.modAbility()
+        ability[5] += 2
     }
 }
